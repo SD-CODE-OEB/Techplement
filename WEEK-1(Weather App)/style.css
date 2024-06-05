@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("Images/Untitled design.png");
+  background-position: right top;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.container-backdrop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 40%;
+  color: white;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.256);
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.425),
+    3px -3px 5px rgba(0, 0, 0, 0.425);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: auto;
+}
+.container-backdrop h1 {
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+.container-backdrop p {
+  font-size: 24px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.container-backdrop p span {
+  color: #f7b733;
+  font-size: 36px;
+  background-color: rgba(245, 222, 179, 0.312);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.container-backdrop .search-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.search-box p {
+  font-size: 24px;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+.search-box input {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  background-color: rgba(81, 63, 28, 0.544);
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+
+.search-box .search-bar:focus {
+  outline: none;
+  border: 1px solid white;
+  box-shadow: 0 0 5px rgba(231, 231, 231, 0.425);
+  background-color: rgba(0, 0, 0, 0.318);
+}
+.search-box button {
+  transform: translateY(2px);
+}
+.search-box button,
+.search-box button span {
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  background-color: #1f53d7;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+.search-box button:hover,
+.search-box button span:hover {
+  background-color: rgba(0, 0, 0, 0.318);
+  color: white;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.425);
+}
+
+.weather-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.weather-display .weather-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.weather-card > * {
+  margin: 5px 0;
+}
+
+.weather-card .city {
+  font-size: 36px;
+  padding: 5px 15px;
+  color: silver;
+  filter: drop-shadow(2px 0px 5px rgba(0, 0, 0, 0.902));
+}
+.weather-card .temperature,
+.weather-card .humidity,
+.weather-card .wind {
+  /* font-weight: 600; */
+  /* font-size: 36px; */
+  padding: 5px 15px;
+}
+.weather-card .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.317);
+}
+.weather-card .description span {
+  font-size: 24px;
+  padding: 5px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.317);
+}
+
+.tri {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 10px 0;
+}
+
+.tri::after,
+.tri::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 50px solid transparent;
+  height: 0;
+  width: 0;
+  border-bottom-color: white;
+  animation: loadA 2s linear infinite 0.5s forwards;
+}
+
+.tri::before {
+  transform: rotate(90deg);
+  animation: loadB 2s linear infinite backwards;
+}
+
+@keyframes loadA {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadB {
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .container-backdrop {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container-backdrop {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-backdrop {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .container-backdrop {
+    width: 90%;
+  }
+  .search-box input {
+    width: 100%;
+  }
+  .search-box button {
+    width: 100%;
+    height: auto;
+  }
+  .weather-card p {
+    font-size: 20px;
+  }
+  .weather-card .description {
+    padding-right: 10px;
+  }
+  .weather-card .description span {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+  }
+}
