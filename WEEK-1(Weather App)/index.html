@@ -15,7 +15,19 @@
         <h1>Weather App</h1>
         <div class="search-box">
             <p>
-                <input type="text" class="search-bar" placeholder="Search for a city...">
+                <input type="text" list="cities" class="search-bar" placeholder="Search for a city...">
+                <datalist id="cities">
+                    <option value="Hyderabad"></option>
+                    <option value="Mumbai"></option>
+                    <option value="Delhi"></option>
+                    <option value="Bangalore"></option>
+                    <option value="Chennai"></option>
+                    <option value="Kolkata"></option>
+                    <option value="Pune"></option>
+                    <option value="Jaipur"></option>
+                    <option value="Ahmedabad"></option>
+                    <option value="Shamshabad"></option>
+                </datalist>
                 <button class="search-button" type="button">
                     <span class="material-symbols-outlined">Search</span>
                 </button>

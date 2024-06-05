@@ -1,5 +1,6 @@
 const searchInp = document.querySelector(".search-bar");
 const searchBtn = document.querySelector(".search-button");
+const citiesStored = document.querySelector("#cities");
 
 const api_key = "5269e7eee6c5f0a5cee268571cabde64";
 const getWeather = async (url) => {
@@ -115,6 +116,17 @@ if (document.location.reload) {
 }
 searchBtn.onclick = () => {
   const city = searchInp.value;
+  const addCity = document.createElement("option");
+  addCity.value = city;
+  let cityExists = false;
+  for (let i = 0; i < citiesStored.options.length; i++) {
+    if (citiesStored.options[i].value === city) {
+      cityExists = true;
+    }
+  }
+  if (!cityExists) {
+    citiesStored.appendChild(addCity);
+  }
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
   getWeather(url);
 };
