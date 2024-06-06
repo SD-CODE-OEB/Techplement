@@ -20,8 +20,10 @@ const getWeather = async (url) => {
       weatherDesc.includes("Clear") ||
       weatherDesc.includes("Sky")
     ) {
-      document.body.style.backgroundImage =
-        "url('Images/evans-dims-FBXdyTMEyiU-unsplash.jpg')";
+      setTimeout(() => {
+        document.body.style.backgroundImage =
+          "url('Images/_1b8d6e33-a8ea-4405-a10a-176037339928.jpeg')";
+      }, 500);
     } else if (
       weatherDesc.includes("cloud") ||
       weatherDesc.includes("Cloud") ||
@@ -38,8 +40,10 @@ const getWeather = async (url) => {
       weatherDesc.includes("smoke") ||
       weatherDesc.includes("Smoke")
     ) {
-      document.body.style.backgroundImage =
-        "url('Images/anandu-vinod-pbxwxwfI0B4-unsplash.jpg')";
+      setTimeout(() => {
+        document.body.style.backgroundImage =
+          "url('Images/_6cdf35c9-de65-4cf3-bb9d-520ed0528d1b.jpeg')";
+      }, 500);
     } else if (
       weatherDesc.includes("rain") ||
       weatherDesc.includes("Rain") ||
@@ -60,8 +64,10 @@ const getWeather = async (url) => {
       weatherDesc.includes("storms") ||
       weatherDesc.includes("Storms")
     ) {
-      document.body.style.backgroundImage =
-        "url('Images/joy-stamp-pGQbWXBC1dA-unsplash.jpg')";
+      setTimeout(() => {
+        document.body.style.backgroundImage =
+          "url('Images/_80b7bee2-421c-4186-b172-40af192a4781.jpeg')";
+      }, 500);
     } else if (
       weatherDesc.includes("snow") ||
       weatherDesc.includes("Snow") ||
@@ -86,8 +92,10 @@ const getWeather = async (url) => {
       weatherDesc.includes("chill") ||
       weatherDesc.includes("Chill")
     ) {
-      document.body.style.backgroundImage =
-        "url('Images/click-and-learn-photography-NGB9oBtOUM8-unsplash.jpg')";
+      setTimeout(() => {
+        document.body.style.backgroundImage =
+          "url('Images/_98e9b4b7-5038-42bd-aced-4f6192a274cd.jpeg')";
+      }, 500);
     }
     document.querySelector(".weather-display").innerHTML = `
     <div class="weather-card">
