@@ -2,6 +2,14 @@ const searchInp = document.querySelector(".search-bar");
 const searchBtn = document.querySelector(".search-button");
 const citiesStored = document.querySelector("#cities");
 
+searchInp.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    searchBtn.click();
+  } else {
+    return;
+  }
+});
 const api_key = "5269e7eee6c5f0a5cee268571cabde64";
 const getWeather = async (url) => {
   try {

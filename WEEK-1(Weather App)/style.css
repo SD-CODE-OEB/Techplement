@@ -110,7 +110,11 @@ body {
   cursor: pointer;
 }
 .search-box button:hover,
-.search-box button span:hover {
+.search-box button span:hover,
+.search-box button:focus,
+.search-box button span:focus,
+.search-box button:active,
+.search-box button span:active {
   background-color: rgba(0, 0, 0, 0.318);
   color: white;
   border: none;
