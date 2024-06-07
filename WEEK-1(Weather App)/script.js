@@ -30,7 +30,7 @@ const getWeather = async (url) => {
     ) {
       setTimeout(() => {
         document.body.style.backgroundImage =
-          "url('./Images/_1b8d6e33-a8ea-4405-a10a-176037339928.jpeg')";
+          "url('./Images/river-2760587_1920.jpg')";
       }, 500);
     } else if (
       weatherDesc.includes("cloud") ||
@@ -50,7 +50,7 @@ const getWeather = async (url) => {
     ) {
       setTimeout(() => {
         document.body.style.backgroundImage =
-          "url('./Images/_6cdf35c9-de65-4cf3-bb9d-520ed0528d1b.jpeg')";
+          "url('./Images/sunset-924108_1920.jpg')";
       }, 500);
     } else if (
       weatherDesc.includes("rain") ||
@@ -74,7 +74,7 @@ const getWeather = async (url) => {
     ) {
       setTimeout(() => {
         document.body.style.backgroundImage =
-          "url('./Images/_80b7bee2-421c-4186-b172-40af192a4781.jpeg')";
+          "url('./Images/moisture-926141_1920.jpg')";
       }, 500);
     } else if (
       weatherDesc.includes("snow") ||
@@ -102,7 +102,7 @@ const getWeather = async (url) => {
     ) {
       setTimeout(() => {
         document.body.style.backgroundImage =
-          "url('Images/_98e9b4b7-5038-42bd-aced-4f6192a274cd.jpeg')";
+          "url('./Images/tree-6835828_1920.jpg')";
       }, 500);
     }
     document.querySelector(".weather-display").innerHTML = `
