@@ -30,7 +30,7 @@ const getWeather = async (url) => {
     ) {
       setTimeout(() => {
         document.body.style.backgroundImage =
-          "url('Images/_1b8d6e33-a8ea-4405-a10a-176037339928.jpeg')";
+          "url('./Images/_1b8d6e33-a8ea-4405-a10a-176037339928.jpeg')";
       }, 500);
     } else if (
       weatherDesc.includes("cloud") ||
@@ -50,7 +50,7 @@ const getWeather = async (url) => {
     ) {
       setTimeout(() => {
         document.body.style.backgroundImage =
-          "url('Images/_6cdf35c9-de65-4cf3-bb9d-520ed0528d1b.jpeg')";
+          "url('./Images/_6cdf35c9-de65-4cf3-bb9d-520ed0528d1b.jpeg')";
       }, 500);
     } else if (
       weatherDesc.includes("rain") ||
@@ -74,7 +74,7 @@ const getWeather = async (url) => {
     ) {
       setTimeout(() => {
         document.body.style.backgroundImage =
-          "url('Images/_80b7bee2-421c-4186-b172-40af192a4781.jpeg')";
+          "url('./Images/_80b7bee2-421c-4186-b172-40af192a4781.jpeg')";
       }, 500);
     } else if (
       weatherDesc.includes("snow") ||

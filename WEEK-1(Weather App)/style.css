@@ -13,7 +13,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: url("Images/_440bf146-aef9-4bb5-9624-02bdd444d58b.jpeg");
+  background: url("./Images/_440bf146-aef9-4bb5-9624-02bdd444d58b.jpeg");
   /* background-image: url("Images/_dc3465f1-00b4-4d20-8762-0be73815f8ec.jpeg"); */
   background-position: right center;
   background-size: cover;
